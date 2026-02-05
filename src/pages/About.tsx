@@ -18,36 +18,45 @@ const About = () => {
 	});
 
 	return (
-		<div className='mx-auto max-w-4xl px-4 py-16 md:px-8 md:py-24'>
+		<div className="mx-auto max-w-4xl px-4 py-16 md:px-8 md:py-24">
 			{/* Page Header */}
-			<h1 className='mb-12 text-4xl font-bold md:text-5xl'>About</h1>
+			<h1 className="mb-12 text-4xl font-bold uppercase md:text-5xl">ABOUT</h1>
 
 			{/* Bio Section */}
-			<section className='mb-16'>
-				<div className='prose prose-lg dark:prose-invert max-w-none'>
-					<p className='text-xl leading-relaxed'>
-						TODO: Add your bio here. This should be 2-3 paragraphs covering:
+			<section className="mb-16">
+				<div className="space-y-6 text-xl leading-relaxed">
+					<p>
+						My father built guitars. I grew up watching wood become instruments.
+						Rube Goldberg taught me machines could be poetry.
 					</p>
-					<ul>
-						<li>Your background and how you got into fabrication</li>
-						<li>Your creative philosophy or approach to work</li>
-						<li>What drives you / your aesthetic voice</li>
-						<li>What makes you unique in your field</li>
-					</ul>
+					<p className="text-2xl font-bold">Now I make things work.</p>
+					<p>
+						Corporate clients need stages that transform, installations that
+						respond, environments that perform. Artists need visions made
+						physical — kinetic sculptures, immersive spaces, objects that move.
+					</p>
+					<p>
+						I don't separate commercial from creative. A mechanism is a
+						mechanism. The job is the same: build it, make it work, watch it
+						come to life.
+					</p>
+					<p className="text-brutal-muted">Brooklyn, NY.</p>
 				</div>
 			</section>
 
 			{/* Skills Section */}
-			<section className='mb-16'>
-				<h2 className='mb-6 text-2xl font-bold'>Skills & Expertise</h2>
+			<section className="mb-16 border-t-3 border-brutal-border pt-8">
+				<h2 className="mb-6 text-2xl font-bold uppercase">
+					SKILLS & EXPERTISE
+				</h2>
 
-				<div className='grid gap-8 md:grid-cols-2'>
+				<div className="grid gap-8 md:grid-cols-2">
 					{/* Technical Skills */}
 					<div>
-						<h3 className='mb-4 text-lg font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400'>
-							Technical
+						<h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-brutal-muted">
+							TECHNICAL
 						</h3>
-						<ul className='space-y-2'>
+						<ul className="space-y-2">
 							<li>CNC Programming & Operation</li>
 							<li>AutoCAD</li>
 							<li>SketchUp</li>
@@ -58,10 +67,10 @@ const About = () => {
 
 					{/* Materials & Fabrication */}
 					<div>
-						<h3 className='mb-4 text-lg font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-400'>
-							Materials & Fabrication
+						<h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-brutal-muted">
+							MATERIALS & FABRICATION
 						</h3>
-						<ul className='space-y-2'>
+						<ul className="space-y-2">
 							<li>Metal Fabrication</li>
 							<li>Woodworking</li>
 							<li>Composite Materials</li>
@@ -73,11 +82,11 @@ const About = () => {
 			</section>
 
 			{/* Photo Section */}
-			<section className='mb-16'>
-				<div className='aspect-[3/2] overflow-hidden bg-gray-100 dark:bg-gray-900'>
+			<section className="mb-16 border-t-3 border-brutal-border pt-8">
+				<div className="aspect-[3/2] overflow-hidden border-3 border-brutal-border">
 					{/* TODO: Add your photo */}
-					<div className='flex h-full items-center justify-center text-gray-400'>
-						Photo placeholder - Add your photo here
+					<div className="flex h-full items-center justify-center text-brutal-muted">
+						[PHOTO]
 					</div>
 				</div>
 			</section>
@@ -85,11 +94,11 @@ const About = () => {
 			{/* Resume Download */}
 			<section>
 				<a
-					href='/Adam Wolcott Smith Resume 2025.pdf'
+					href="/Adam Wolcott Smith Resume 2025.pdf"
 					download
-					className='inline-block border border-black px-8 py-4 font-medium uppercase tracking-wide transition-colors hover:bg-black hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-black'
+					className="inline-block border-3 border-brutal-border px-8 py-4 font-bold uppercase tracking-wide transition-colors hover:bg-brutal-text hover:text-brutal-bg"
 				>
-					Download Resume (PDF)
+					DOWNLOAD RESUME [PDF]
 				</a>
 			</section>
 		</div>
