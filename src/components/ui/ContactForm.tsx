@@ -3,6 +3,12 @@ import { useState } from "react";
 // Simple email format check — matches the server-side validation
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Max lengths — must match the server-side limits in api/contact.ts
+const MAX_NAME = 100;
+const MAX_EMAIL = 254;
+const MAX_SUBJECT = 200;
+const MAX_MESSAGE = 5000;
+
 // Form state machine: idle → submitting → success/error
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -60,6 +66,8 @@ const ContactForm = () => {
 
     if (!formData.name.trim()) {
       errors.name = "Name is required";
+    } else if (formData.name.trim().length > MAX_NAME) {
+      errors.name = "Name is too long";
     }
 
     if (!formData.email.trim()) {
@@ -70,10 +78,14 @@ const ContactForm = () => {
 
     if (!formData.subject.trim()) {
       errors.subject = "Subject is required";
+    } else if (formData.subject.trim().length > MAX_SUBJECT) {
+      errors.subject = "Subject is too long";
     }
 
     if (!formData.message.trim()) {
       errors.message = "Message is required";
+    } else if (formData.message.trim().length > MAX_MESSAGE) {
+      errors.message = "Message is too long";
     }
 
     return errors;
@@ -103,6 +115,12 @@ const ContactForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+
+      // The API might return HTML if the function crashes, so check content type
+      const contentType = response.headers.get("content-type");
+      if (!contentType || !contentType.includes("application/json")) {
+        throw new Error("A server error occurred. Please try again later.");
+      }
 
       const data = await response.json();
 
@@ -196,6 +214,7 @@ const ContactForm = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
+          maxLength={MAX_NAME}
           aria-required="true"
           aria-invalid={!!fieldErrors.name}
           aria-describedby={fieldErrors.name ? "name-error" : undefined}
@@ -227,6 +246,7 @@ const ContactForm = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
+          maxLength={MAX_EMAIL}
           aria-required="true"
           aria-invalid={!!fieldErrors.email}
           aria-describedby={fieldErrors.email ? "email-error" : undefined}
@@ -258,6 +278,7 @@ const ContactForm = () => {
           name="subject"
           value={formData.subject}
           onChange={handleChange}
+          maxLength={MAX_SUBJECT}
           aria-required="true"
           aria-invalid={!!fieldErrors.subject}
           aria-describedby={fieldErrors.subject ? "subject-error" : undefined}
@@ -288,6 +309,7 @@ const ContactForm = () => {
           name="message"
           value={formData.message}
           onChange={handleChange}
+          maxLength={MAX_MESSAGE}
           aria-required="true"
           aria-invalid={!!fieldErrors.message}
           aria-describedby={fieldErrors.message ? "message-error" : undefined}

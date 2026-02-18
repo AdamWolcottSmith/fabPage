@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Barcode-style favicon encoding "AWS" (Adam Wolcott Smith) -->
+  <!-- Dark background matching brutalist theme -->
+  <rect width="32" height="32" fill="#0a0a0a"/>
+  <!-- Barcode bars — Code 128B-inspired pattern for "AWS" -->
+  <!-- Varying widths: 1px=thin, 2px=medium, 3px=wide -->
+  <g fill="#e5e5e5">
+    <!-- Start pattern -->
+    <rect x="2" y="4" width="2" height="24"/>
+    <rect x="5" y="4" width="1" height="24"/>
+    <rect x="7" y="4" width="1" height="24"/>
+    <!-- A -->
+    <rect x="9" y="4" width="1" height="24"/>
+    <rect x="11" y="4" width="2" height="24"/>
+    <rect x="14" y="4" width="1" height="24"/>
+    <!-- W -->
+    <rect x="16" y="4" width="1" height="24"/>
+    <rect x="18" y="4" width="1" height="24"/>
+    <rect x="20" y="4" width="3" height="24"/>
+    <!-- S -->
+    <rect x="24" y="4" width="1" height="24"/>
+    <rect x="26" y="4" width="2" height="24"/>
+    <!-- Stop pattern -->
+    <rect x="29" y="4" width="1" height="24"/>
+  </g>
+</svg>
