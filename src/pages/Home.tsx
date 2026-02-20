@@ -17,6 +17,7 @@ const Home = () => {
       "corporate events",
       "film production",
     ],
+    ogImage: "https://wolcott.works/assets/projects/Kingdom_2973.jpg",
   });
 
   // Get all featured projects to display

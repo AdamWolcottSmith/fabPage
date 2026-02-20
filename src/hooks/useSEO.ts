@@ -40,6 +40,11 @@ export const useSEO = (seoData: SEOData) => {
     // Set OG image if provided
     if (seoData.ogImage) {
       setMetaTag("og:image", seoData.ogImage, true);
+      // Twitter/X card tags — LinkedIn and iMessage also read these
+      setMetaTag("twitter:card", "summary_large_image");
+      setMetaTag("twitter:image", seoData.ogImage);
+      setMetaTag("twitter:title", seoData.title);
+      setMetaTag("twitter:description", seoData.description);
     }
 
     // Set canonical URL if provided
