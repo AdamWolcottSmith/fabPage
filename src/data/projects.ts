@@ -18,7 +18,8 @@ export const projects: Project[] = [
       "/assets/projects/ryder-cup-1.jpg",
     ],
     credits: [
-      // TODO: Add actual credits
+      {role: "Creative Technical Director &Lead Fabricator", name: "Adam Wolcott Smith" }
+
     ],
     featured: true,
   },
@@ -41,7 +42,7 @@ export const projects: Project[] = [
       "/assets/projects/UBS_7.jpg",
       "/assets/projects/UBS_8.jpg",
     ],
-    credits: [],
+    credits: [{role: "Creative Technical Director &Lead Fabricator", name: "Adam Wolcott Smith" }],
     featured: true,
   },
   {
@@ -60,7 +61,7 @@ export const projects: Project[] = [
       "/assets/projects/NARC_JoeColeman-LeoSanoPhotos-10.jpeg",
       "/assets/projects/NARC_JoeColeman-LeoSanoPhotos-17.jpeg"
     ],
-    credits: [],
+    credits: [{role: "Creative Technical Director &Lead Fabricator", name: "Adam Wolcott Smith" }],
     featured: true,
   },
   {
@@ -79,7 +80,7 @@ export const projects: Project[] = [
       "/assets/projects/NARC_walter-wlodarczyk-WWRA3803.jpeg",
       "/assets/projects/NARC_walter-wlodarczyk-WWRA3913.jpeg"
     ],
-    credits: [],
+    credits: [{role: "Creative Technical Director &Lead Fabricator", name: "Adam Wolcott Smith" }],
     featured: true,
   },
   {
@@ -101,7 +102,7 @@ export const projects: Project[] = [
       "/assets/projects/DatingPrivateLives_2905.jpg",
       "/assets/projects/DatingPrivateLives_2906.jpg",
     ],
-    credits: [],
+    credits: [{role: "Art Director", name: "Adam Wolcott Smith" }],
     featured: true,
   },
   {
@@ -123,7 +124,7 @@ export const projects: Project[] = [
       "/assets/projects/Kingdom_2962.jpg",
       "/assets/projects/Kingdom_2971.jpg",
     ],
-    credits: [],
+    credits: [{role: "Creative Technical Director & Art Director", name: "Adam Wolcott Smith" }],
     featured: true,
   },
 ];
