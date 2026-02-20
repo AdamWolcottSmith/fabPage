@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     sitemap({
       hostname: "https://wolcott.works",
-      routes: [
+      dynamicRoutes: [
         "/",
         "/about",
         "/contact",
