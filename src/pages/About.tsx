@@ -6,7 +6,7 @@ const About = () => {
   useSEO({
     title: "About — Adam Wolcott Smith",
     description:
-      "Brooklyn-based Creative Technical Director & Fabricator with expertise in CNC, AutoCAD, SketchUp, and materials. Specializing in corporate events, film/TV production, and art installations.",
+      "Brooklyn-based Creative Technical Director & Fabricator. 40+ high-profile builds for UBS, MLB, NFL, and Ryder Cup. Gallery and performance fabrication at Deitch Projects and Pioneer Works. Expert in industrial CNC, AutoCAD, and scenic builds at scale.",
     keywords: [
       "about",
       "bio",
@@ -32,14 +32,10 @@ const About = () => {
           </p>
           <p className="text-2xl font-bold">Now I make things work.</p>
           <p>
-            Corporate clients need stages that transform, installations that
-            respond, environments that perform. Artists need visions made
-            physical — kinetic sculptures, immersive spaces, objects that move.
-          </p>
-          <p>
-            I don't separate commercial from creative. A mechanism is a
-            mechanism. The job is the same: build it, make it work, watch it
-            come to life.
+            Corporate clients get stages that hold 10,000 people and break down
+            in 8 hours. Artists get kinetic sculptures that move exactly the way
+            they imagined, fabricated to spec at gallery scale. The difference
+            is the deadline and the budget — the craft is the same.
           </p>
           <p className="text-brutal-muted">Brooklyn, NY.</p>
         </div>

@@ -30,10 +30,10 @@ export interface CVData {
 }
 
 export const cv: CVData = {
-  headline: "Project Manager, Creative Technical Director & Fabricator",
+  headline: "Creative Technical Director & Fabricator",
 
   summary:
-    "Dynamic Creative Technical Director with 2+ years at Firebrand NYC, delivering 40+ high-profile events for clients like UBS, MLB, NFL, and Ryder Cup, managing $750K+ budgets. Expert in 8x8 Industrial CNC fabrication, AutoCAD, Aspire/Vetric, and BeMatrix systems, with a knack for crafting immersive scenic builds using PVC, Foam, and Wood laminates.",
+    "Creative Technical Director & Fabricator with 2+ years at Firebrand NYC. Delivered 40+ high-profile events — Ryder Cup, NBA All-Star Game, UBS, MLB — managing $750K+ budgets with 95% on-time delivery. Parallel practice in gallery and performance fabrication: kinetic sculptures at Deitch Projects, installations at Pioneer Works. Expert in industrial CNC, AutoCAD, and scenic builds at scale.",
 
   experience: [
     {
@@ -42,7 +42,7 @@ export const cv: CVData = {
       location: "New York, NY",
       period: "2023–2025",
       highlights: [
-        "Directed 8x8 Industrial CNC fabrication for 40+ events (e.g., MLB All-Star Game, Ryder Cup), achieving 100% client satisfaction and 95% on-time delivery for 500–10,000 attendees.",
+        "Directed 8x8 Industrial CNC fabrication for 40+ events (e.g., MLB, Ryder Cup), achieving 100% client satisfaction and 95% on-time delivery for 500–10,000 attendees.",
         "Led 12-person crews, executing 40+ custom scenic builds annually with materials like Formica, PVC, and BeMatrix, boosting project efficiency by 20%.",
         "Collaborated with sales on 30+ renderings yearly using AutoCAD and SketchUp, infusing post-punk aesthetics to drive 20% client retention growth.",
         "Managed $750K+ in material/equipment procurement (Plexiglass, Formica), cutting costs 15% via vendor negotiations and inventory optimization.",
